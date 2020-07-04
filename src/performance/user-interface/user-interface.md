@@ -15,11 +15,11 @@ Avoid using preparation data in screen actions; most of the time it's better jus
 
 ### Solution
 
-Avoid using data created in the screen preparation in the screen actions. For instance, instead of using the tablerecord record data, use only the ID of the row and fetch the data from the database again is needed.
+Avoid using data created in the screen preparation in the screen actions. For instance, instead of using the tablerecord record data, use only the ID of the row and fetch the data from the database again as needed.
 
 ### Importance
 
-Page size affects usability since it will increase the time to submit a form. If you use screen preparation data on screen action, that data will be saved on the page viewstate. Since the viewstate is a part of the page it is sent to the client with every requested page. The viewstate is also sent to the server on a post, postback and AJAX request. So avoid using preparation data in screen actions otherwise the size and loading time of the page can increase dramatically.
+Page size affects usability since it will increase the time to submit a form. If you use screen preparation data in screen actions, that data will be saved in the page viewstate. Since the viewstate is a part of the page it is sent to the client with every requested page. The viewstate is also sent to the server in a post, postback and AJAX request. So avoid using preparation data in screen actions otherwise the size and loading time of the page can increase dramatically.
 
 ## Use AJAX with care and in moderation
 
